@@ -10,11 +10,8 @@ O arquivo de entrada contém um valor de ponto flutuante (dupla precisão), corr
 Saída
 A saída deverá ser uma mensagem "VOLUME" conforme o exemplo fornecido abaixo, com um espaço antes e um espaço depois da igualdade. O valor deverá ser apresentado com 3 casas após o ponto. */
 
-readline($raio);
-$pi = 3.14159;
-
-$resultado = (4 / 3) * ($pi * ($raio ** 3));
-
-echo "VOLUME = " . $resultado;
+$raio = readline();
+$resultado = (4.0 / 3) * (3.14159 * $raio * $raio * $raio);
+printf("VOLUME = %.3lf\n", $resultado);
 
 ?>
